@@ -1,0 +1,207 @@
+{
+    "id": "blank",
+    "common": {
+        "id": "com.mycompany.tv-player",
+        "title": "tv-player",
+        "description": "Cross-platform application project based on ReNative",
+        "license": "MIT",
+        "includedPlugins": [
+            "*"
+        ],
+        "includedFonts": [
+            "*"
+        ],
+        "backgroundColor": "#FFFFFF"
+    },
+    "platforms": {
+        "ios": {
+            "entryFile": "index.ios",
+            "scheme": "RNVApp",
+            "teamID": "",
+            "permissions": [
+                "*"
+            ],
+            "buildSchemes": {
+                "debug": {
+                    "runScheme": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "runScheme": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "tvos": {
+            "entryFile": "index.tvos",
+            "teamID": "",
+            "scheme": "RNVAppTVOS",
+            "buildSchemes": {
+                "debug": {
+                    "runScheme": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "scheme": "RNVAppTVOSRelease",
+                    "runScheme": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "android": {
+            "entryFile": "index.android",
+            "enableHermes": true,
+            "permissions": [
+                "*"
+            ],
+            "buildSchemes": {
+                "debug": {
+                    "signingConfig": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "signingConfig": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": true
+                }
+            }
+        },
+        "androidtv": {
+            "entryFile": "index.androidtv",
+            "enableHermes": true,
+            "permissions": [
+                "*"
+            ],
+            "buildSchemes": {
+                "debug": {
+                    "signingConfig": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "signingConfig": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "androidwear": {
+            "entryFile": "index.androidwear",
+            "enableHermes": true,
+            "permissions": [
+                "*"
+            ],
+            "buildSchemes": {
+                "debug": {
+                    "signingConfig": "Debug",
+                    "bundleAssets": false
+                },
+                "release": {
+                    "signingConfig": "Release",
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "macos": {
+            "entryFile": "index.macos",
+            "buildSchemes": {
+                "debug": {
+                    "bundleAssets": false,
+                    "environment": "development"
+                },
+                "release": {
+                    "bundleAssets": true,
+                    "bundleIsDev": false,
+                    "environment": "production"
+                }
+            }
+        },
+        "tizen": {
+            "appName": "ReNativeTV",
+            "package": "NkVRhWHJST",
+            "id": "NkVRhWHJST.ReNativeTV",
+            "entryFile": "index.tizen",
+            "certificateProfile": "RNVanillaCert"
+        },
+        "tizenwatch": {
+            "appName": "ReNativeWatch",
+            "package": "cHIP2fIRQZ",
+            "id": "cHIP2fIRQZ.ReNativeWatch",
+            "entryFile": "index.tizenwatch",
+            "certificateProfile": "RNVanillaCert"
+        },
+        "tizenmobile": {
+            "appName": "RenativeMobile",
+            "package": "PauodvCU2r",
+            "id": "PauodvCU2r.ReNativeMobile",
+            "entryFile": "index.tizenwatch",
+            "certificateProfile": "RNVanillaCert"
+        },
+        "web": {
+            "entryFile": "index.web",
+            "buildSchemes": {
+                "debug": {
+                    "bundleAssets": false,
+                    "environment": "developement"
+                },
+                "release": {
+                    "bundleAssets": true,
+                    "environment": "production"
+                }
+            }
+        },
+        "webos": {
+            "entryFile": "index.webos"
+        },
+        "windows": {
+            "entryFile": "index.windows"
+        },
+        "kaios": {
+            "entryFile": "index.kaios",
+            "buildSchemes": {
+                "debug": {
+                    "bundleAssets": false
+                },
+                "release": {
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "firefoxos": {
+            "entryFile": "index.firefoxos",
+            "buildSchemes": {
+                "debug": {
+                    "bundleAssets": false
+                },
+                "release": {
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "firefoxtv": {
+            "entryFile": "index.firefoxtv",
+            "buildSchemes": {
+                "debug": {
+                    "bundleAssets": false
+                },
+                "release": {
+                    "bundleAssets": true,
+                    "bundleIsDev": false
+                }
+            }
+        },
+        "chromecast": {
+            "entryFile": "index.chromecast",
+            "webpackConfig": {
+                "customScripts": [
+                    "www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js",
+                    "www.gstatic.com/cast/sdk/libs/devtools/debug_layer/caf_receiver_logger.js"
+                ]
+            }
+        }
+    }
+}
