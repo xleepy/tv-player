@@ -20,8 +20,17 @@
     },
     "devDependencies": {
         "@rnv/engine-rn-web": "0.31.3",
+        "eslint": "^7.31.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-config-standard-react": "^11.0.1",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "eslint-plugin-react": "^7.24.0",
         "renative-template-blank": "0.31.3",
         "renative-template-hello-world": "0.31.3",
-        "rnv": "0.31.3"
+        "rnv": "0.31.3",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.2"
     }
 }
